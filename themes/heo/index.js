@@ -467,7 +467,7 @@ const LayoutTagIndex = props => {
         {tagOptions.map(tag => {
           return (
             {/* 广告嵌入 */}
-            <AdSlot type={'auto'} />
+            <AdSlot type={'in-article'} />
             <Link
               key={tag.name}
               href={`/tag/${tag.name}`}
