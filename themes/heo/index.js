@@ -290,6 +290,8 @@ const LayoutSlug = props => {
 
         {!lock && (
           <div id='article-wrapper' className='mx-auto md:w-full md:px-5'>
+            {/* 广告嵌入 */}
+            <AdSlot type={'in-article'} />
             {/* 文章主体 */}
             <article itemScope itemType='https://schema.org/Movie'>
               {/* Notion文章主体 */}
@@ -303,7 +305,8 @@ const LayoutSlug = props => {
 
               {/* 上一篇\下一篇文章 */}
               <PostAdjacent {...props} />
-
+              {/* 广告嵌入 */}
+              <AdSlot type={'in-article'} />
               {/* 分享 */}
               <ShareBar post={post} />
               {post?.type === 'Post' && (
