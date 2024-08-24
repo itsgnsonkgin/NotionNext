@@ -466,6 +466,8 @@ const LayoutTagIndex = props => {
         className='duration-200 flex flex-wrap space-x-5 space-y-5 m-10 justify-center'>
         {tagOptions.map(tag => {
           return (
+            {/* 广告嵌入 */}
+            <AdSlot type={'auto'} />
             <Link
               key={tag.name}
               href={`/tag/${tag.name}`}
